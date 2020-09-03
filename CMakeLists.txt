@@ -3,7 +3,7 @@ project(geos_cmake_module)
 
 find_package(catkin REQUIRED)
 
-catkin_package(CFG_EXTRAS cmake_modules-extras.cmake)
+catkin_package(CFG_EXTRAS geos_cmake_module-extras.cmake)
 
 ## Install all cmake files
 install(
