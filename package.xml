@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>geos_cmake_module</name>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <description>cmake module for using the libgeos geometry library with ROS</description>
 
   <maintainer email="daniel.dsouza@swri.org">Daniel D'Souza</maintainer>

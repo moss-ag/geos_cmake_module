@@ -2,8 +2,8 @@
 Changelog for package geos_cmake_module
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.2 (2020-09-04)
+------------------
 * added license
 * Merge branch 'tweak-cmake-extras' into 'master'
   Tweak cmake extras
