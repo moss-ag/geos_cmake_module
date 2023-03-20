@@ -2,9 +2,9 @@
 <package format="2">
   <name>geos_cmake_module</name>
   <version>0.0.2</version>
-  <description>cmake module for using the libgeos geometry library with ROS</description>
+  <description>CMake module for using the libgeos geometry library with ROS</description>
 
-  <maintainer email="daniel.dsouza@swri.org">Daniel D'Souza</maintainer>
+  <maintainer email="swri-robotics@swri.org">Southwest Research Institute</maintainer>
 
   <license>BSD</license>
 
@@ -14,9 +14,15 @@
   <author email="mateusz@loskot.net">Mateusz Loskot</author>
   <author email="daniel.dsouza@swri.org">Daniel D'Souza</author>
 
-  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <buildtool_export_depend>geos</buildtool_export_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
 
   <export>
     <architecture_independent />
+    <build_type>ament_cmake</build_type>
   </export>
 </package>
