@@ -4,7 +4,7 @@
   <version>0.0.2</version>
   <description>CMake module for using the libgeos geometry library with ROS</description>
 
-  <maintainer email="daniel.dsouza@swri.org">Daniel D'Souza</maintainer>
+  <maintainer email="swri-robotics@swri.org">Southwest Research Institute</maintainer>
 
   <license>BSD</license>
 
