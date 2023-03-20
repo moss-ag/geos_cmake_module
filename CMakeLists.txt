@@ -1,11 +1,16 @@
-cmake_minimum_required(VERSION 3.0.2)
-project(geos_cmake_module)
+cmake_minimum_required(VERSION 3.15)
+project(geos_cmake_module NONE)
 
-find_package(catkin REQUIRED)
+find_package(ament_cmake REQUIRED)
 
-catkin_package(CFG_EXTRAS geos_cmake_module-extras.cmake)
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  ament_lint_auto_find_test_dependencies()
+endif()
 
-## Install all cmake files
+ament_package(
+  CONFIG_EXTRAS "geos_cmake_module-extras.cmake")
+
 install(
-	DIRECTORY cmake/Modules
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/cmake)
+  DIRECTORY cmake
+  DESTINATION share/${PROJECT_NAME})
